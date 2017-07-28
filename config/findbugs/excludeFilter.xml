@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+
+    <!-- FINDBUGS TEST EXCLUSIONS GO HERE -->
+    <Match>
+        <Class name="com.resty.rest.AbstractIntTest"/>
+        <Field name="jdbcTemplate"/>
+        <Bug pattern="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD"/>
+    </Match>
+
+</FindBugsFilter>

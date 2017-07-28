@@ -1,0 +1,20 @@
+version: '3'
+services:
+resty_pg:
+    image: postgres:latest
+    container_name: resty_pg
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=services
+  resty_pg_inttest:
+    image: postgres:latest
+    container_name: resty_pg_inttest
+    ports:
+      - "5434:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=services_inttest
