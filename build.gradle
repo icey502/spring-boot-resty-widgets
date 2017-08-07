@@ -12,7 +12,7 @@ targetCompatibility = 1.8
 
 buildscript {
     ext {
-        springBootVersion = "1.5.3.RELEASE"
+        springBootVersion = "1.5.6.RELEASE"
     }
     repositories {
         mavenLocal()
